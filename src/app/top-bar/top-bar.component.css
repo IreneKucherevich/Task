@@ -1,0 +1,12 @@
+a:hover {
+    font-weight: bold;
+    
+}
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+
+}
