@@ -1,6 +1,22 @@
 <p class="label">Users</p>
-<div *ngFor="let user of users">
+<!-- <div *ngFor="let user of users">
     <h2>{{user.userName}}</h2>
     <h2>{{user.userSurname}}</h2>
     <h2>{{user.userBirthDate | date}}</h2>
-</div>
+</div> -->
+<table cellpadding="25" border="1" >
+        <thead>
+         <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>BirthDate</th>
+         </tr>
+       </thead>
+       <tbody>
+           <tr *ngFor="let user of users">
+               <td>{{user.userName}}</td>
+               <td>{{user.userSurname}}</td>
+               <td>{{user.userBirthDate | date}}</td>
+            </tr>
+       </tbody>
+</table>

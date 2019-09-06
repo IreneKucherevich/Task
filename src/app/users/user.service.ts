@@ -6,12 +6,13 @@ import { UserModel } from './user-model';
 
 @Injectable()
 export class UserService {
+  
   constructor(private http: HttpClient) { }
   
-  configUrl = 'assets/users.json';
+  usersUrl = 'assets/users.json';
 
   getUsers() : Observable<UserModel[]> {
-    return this.http.get('assets/users.json').pipe(map(data=>{
+    return this.http.get(this.usersUrl).pipe(map(data=>{
         let usersList = data["userList"];
         return usersList.map(function(user:any) {
             return {userName: user.userName, userSurname: user.userSurname, userBirthDate: user.userBirthDate};

@@ -2,11 +2,11 @@
   "userList":
   [{
       "userName": "Bob",
-      "userSurname": "28",
-      "userBirthDate": "2012-04-23T00:00:00.511Z"
+      "userSurname": "Smith",
+      "userBirthDate": "1974-04-23T00:00:00.511Z"
   },{
       "userName": "Tom",
-      "userSurname": "45",
-      "userBirthDate": "2012-04-23T00:00:00.511Z"
+      "userSurname": "Andersen",
+      "userBirthDate": "1982-11-15T00:00:00.511Z"
   }]
 }

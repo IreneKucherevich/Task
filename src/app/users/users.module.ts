@@ -8,7 +8,6 @@ import { BrowserModule } from '@angular/platform-browser';
   declarations: [UsersComponent],
   imports: [ 
     BrowserModule,
-
   ],
   exports: [UsersComponent]
 })

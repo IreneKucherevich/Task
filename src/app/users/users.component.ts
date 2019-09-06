@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from './user.service';
 import { UserModel } from './user-model';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-users',
@@ -9,6 +8,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./users.component.css'],
   providers:[UserService]
 })
+
 export class UsersComponent implements OnInit {
 
   users: UserModel[]=[];
