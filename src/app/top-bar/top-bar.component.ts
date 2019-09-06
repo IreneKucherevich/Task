@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-top-bar',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
+  goUsers(){
+    this.router.navigate(['/users']);
+  }
+  
   ngOnInit() {
   }
 

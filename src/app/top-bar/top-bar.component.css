@@ -1,7 +1,8 @@
-a:hover {
+a:hover{
     font-weight: bold;
-    
+    cursor: pointer; 
 }
+
 a{
     font-size: 30px;
     text-decoration: none;

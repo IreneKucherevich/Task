@@ -5,23 +5,21 @@ import {Routes, RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { UsersComponent } from './users/users.component';
-import { TasksComponent } from './tasks/tasks.component';
+import { appRoutes } from './routes';
+import { UsersModule } from './users/users.module';
+import { TasksModule } from './tasks/tasks.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    UsersComponent,
-    TasksComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-    { path: 'users', component: UsersComponent},
-    { path: 'tasks', component: TasksComponent }
-    ])
-
+    UsersModule,
+    TasksModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
