@@ -1,0 +1,12 @@
+{ 
+  "userList":
+  [{
+      "userName": "Bob",
+      "userSurname": "28",
+      "userBirthDate": "2012-04-23T00:00:00.511Z"
+  },{
+      "userName": "Tom",
+      "userSurname": "45",
+      "userBirthDate": "2012-04-23T00:00:00.511Z"
+  }]
+}
