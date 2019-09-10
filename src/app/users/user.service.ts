@@ -6,10 +6,10 @@ import { UserModel } from './user-model';
 
 @Injectable()
 export class UserService {
-  
+
   constructor(private http: HttpClient) { }
   
-  usersUrl = 'assets/users.json';
+  usersUrl = 'assets/users.json'; 
 
   getUsers() : Observable<UserModel[]> {
     return this.http.get(this.usersUrl).pipe(map(data=>{
