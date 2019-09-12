@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
-import { TasksComponent } from './tasks.component';
-import { BrowserModule } from '@angular/platform-browser';
-
+import { TasksComponent } from './tasks-component/tasks.component';
+import { CommonModule } from '@angular/common';
+import { TasksRoutingModule } from './tasks-routing.module';
 
 
 @NgModule({
   declarations: [TasksComponent],
   imports: [
-    BrowserModule
+    CommonModule,
+    TasksRoutingModule,
   ],
   exports: [TasksComponent]
 })

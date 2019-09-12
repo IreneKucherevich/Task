@@ -1,8 +1,21 @@
 import { Routes } from '@angular/router';
-import { UsersComponent } from './users/users.component';
-import { TasksComponent } from './tasks/tasks.component';
 
 export const appRoutes: Routes =[
-    { path: 'users', component: UsersComponent},
-    { path: 'tasks', component: TasksComponent }
+    {
+        path: '', 
+        redirectTo: '', 
+        pathMatch: 'full'
+    },
+    {
+        path: 'users', 
+        loadChildren: () => import('./users/users.module').then(mod => mod.UsersModule)
+    },
+    {
+        path: 'tasks', 
+        loadChildren: () => import('./tasks/tasks.module').then(mod => mod.TasksModule)
+    },
+    {
+        path: '**', 
+        redirectTo: '/'
+    }
 ];
