@@ -13,5 +13,9 @@ export const appRoutes: Routes =[
     {
         path: 'tasks', 
         loadChildren: () => import('./tasks/tasks.module').then(mod => mod.TasksModule)
+    },
+    {
+        path: '**', 
+        redirectTo: '/'
     }
 ];
